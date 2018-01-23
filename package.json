@@ -1,0 +1,21 @@
+{
+  "name": "log",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://danncortes@bitbucket.org/danncortes/node-log.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/danncortes/node-log#readme",
+  "dependencies": {
+    "winston": "^3.0.0-rc1",
+    "winston-daily-rotate-file": "^1.7.2",
+    "yargs": "^10.1.1"
+  }
+}
