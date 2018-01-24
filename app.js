@@ -6,7 +6,7 @@ const { createLogger, transports, format, format: { combine, timestamp, prettyPr
 const today = new Date()
 let month = today.getMonth() + 1;
 month = month < 10 ? '0' + month : month;
-const fileDate = `${today.getFullYear()}-${month}-${today.getDate()}`
+const fileDate = `${today.getFullYear()}-${month}-${today.getDate()}`;
 
 const myFormat = printf(info => {
     return `${info.timestamp} - [${info.level}]: ${info.message}`;
@@ -18,7 +18,7 @@ const logger = createLogger({
         myFormat
     ),
     transports: [
-        new transports.File({ filename: `${fileDate}.log` }),
+        new transports.File({ filename: `${fileDate}.log` })
     ]
 })
 
